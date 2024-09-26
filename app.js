@@ -15,7 +15,7 @@ class SignUpForm extends React.Component {
             React.createElement('label', null, 'Email'),
             React.createElement('input', {type: 'text'}, null),
             React.createElement('br', null, null),
-            React.createElement('button', null, 'Skicka'),
+            React.createElement('button', {className: 'btn btn-primary rounded-pill px-3'}, 'Skicka'),
         )
     ];
 
@@ -25,7 +25,7 @@ class SignUpForm extends React.Component {
     }
 
     render() {
-        return React.createElement('div', {style: {display: 'flex', flexDirection: 'column', alignItems: 'center'}}, this.elements);
+        return React.createElement('div', {className: 'bg-success-subtle border border-success rounded', style: {width: '500px', margin: '0 auto', padding: '1em'}}, this.elements);
     }
 }
 
